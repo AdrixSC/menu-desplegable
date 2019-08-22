@@ -7,10 +7,12 @@ body {
 }
 
 #menu-dropdown {
+    z-index: 1000;
+    max-width: 230px;
+    width: 95%;
     background-color: #444242;
     color: white;
     padding: 10px;
-    width: 230px;
     height: 350px;
 }
 
@@ -18,16 +20,37 @@ body {
     list-style: none;
 }
 
-.deptos {
+#menu-dropdown ul li {
     position: relative;
 }
 
-.deptos .subdeptos {
+#menu-dropdown ul li:hover {
+    color: gray;
+}
+
+#menu-dropdown ul li .arrow-white:hover {
+    color: gray;
+}
+
+#menu-dropdown ul li .subdeptos {
+    display: none;
     float: right;
     position: absolute;
     padding-left: 230px;
-    top: 0px;
-    width: 900px;
+    width: 150%;
+}
+
+#menu-dropdown ul li:hover .subdeptos {
+    display: block;
+}
+
+#menu-dropdown ul li .subdeptos li {
+    display: block;
+    overflow: hidden;
+}
+
+.deptos {
+    position: relative;
 }
 
 li {
@@ -40,57 +63,61 @@ li {
 }
 
 .arrow-white {
-  width: 15px;
-  position: absolute;
-  right: 0;
+    width: 15px;
+    position: absolute;
+    right: 0;
+}
+
+#celulares {
+    top: 0px;
 }
 
 #computo {
-  top: -40px;
+    top: -40px;
 }
 
 #fotografia {
-  top: -90px;
+    top: -90px;
 }
 
 #drones {
-  top: -130px;
+    top: -130px;
 }
 
 #accesorios {
-  top: -175px;
+    top: -175px;
 }
 
 #celulares img {
-  width: 500px;
-  top: 0;
-  position: absolute;
+    width: 500px;
+    top: 0;
+    position: absolute;
 }
 
 #computo img {
-  width: 500px;
-  position: absolute;
-  margin-left: 150px;
-  top: 0px;
+    width: 500px;
+    position: absolute;
+    margin-left: 150px;
+    top: 0px;
 }
 
 #fotografia img {
-  width: 400px;
-  position: absolute;
-  margin-left: 200px;
-  top: 0px;
+    width: 400px;
+    position: absolute;
+    margin-left: 200px;
+    top: 0px;
 }
 
 #drones img {
-  width: 400px;
-  position: absolute;
-  margin-left: 200px;
-  top: 0px;
+    width: 400px;
+    position: absolute;
+    margin-left: 200px;
+    top: 0px;
 }
 
 #accesorios img {
-  width: 350px;
-  position: absolute;
-  margin-left: 200px;
-  top: 0px;
+    width: 350px;
+    position: absolute;
+    margin-left: 200px;
+    top: 0px;
 }

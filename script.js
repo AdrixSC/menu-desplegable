@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
     $('.boton-menu').hover(function () {
         $('#menu-dropdown').slideDown();
         $('ul li:has(ul)').hover(function (e) {
@@ -13,4 +13,24 @@ $(document).ready(function () {
             $("#menu-dropdown").slideUp();
         }
     });
-});
+});*/
+
+$(document).ready(main);
+
+var contador = 1;
+
+function main() {
+    $('.boton-menu').click(function () {
+        if (contador == 1) {
+            $('#menu-dropdown').slideDown();
+            contador = 0;
+        } else {
+            contador = 1;
+            $('#menu-dropdown').slideUp();
+        }
+    });
+
+    $('.deptos').click(function () {
+        $(this).children('.subdeptos').slideToggle();
+    })
+}
