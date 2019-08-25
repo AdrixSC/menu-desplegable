@@ -6,6 +6,11 @@ body {
     display: none;
 }
 
+.active {
+    display: block !important;
+    overflow: visible !important;
+}
+
 #menu-dropdown {
     z-index: 1000;
     max-width: 230px;
@@ -36,8 +41,10 @@ body {
     display: none;
     float: right;
     position: absolute;
-    padding-left: 230px;
     width: 150%;
+    height: 438px;
+    border: 1px solid darkgreen;
+    left: 165px;
 }
 
 #menu-dropdown ul li:hover .subdeptos {
